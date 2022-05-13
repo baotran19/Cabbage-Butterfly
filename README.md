@@ -15,9 +15,8 @@ Cleaning process:
         
 Updated the sex column to reflect male or female. Some data was portrayed as F? or M? so we made a code to just have it formatted to be male or female. If the sex was blank then we made the data say unknown instead.
 
-  `df$SexUpdated <- gsub("(?i)Female|(?i)F", "female",df$SexUpdated)`
-
-  `df$SexUpdated <- gsub("(?i)Male|(?i)M", "male",df$SexUpdated)`
+  `df$SexUpdated <- gsub("(?i)Female|(?i)F", "female",df$SexUpdated)
+   df$SexUpdated <- gsub("(?i)Male|(?i)M", "male",df$SexUpdated)`
 
 `df$SexUpdated[df$SexUpdated == "female?"] <- "female"`
 
